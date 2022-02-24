@@ -5,7 +5,6 @@ import java.util.ListIterator;
 import java.util.Scanner;
 
 public class AddressBook {
-
 	public static void main(String[] args) {
 		System.out.println("Welcome to the address book system");
 		ArrayList<Contacts> array = new ArrayList<Contacts>();
@@ -56,16 +55,10 @@ public class AddressBook {
 						System.out.println("------------------------------------");
 
 						ListIterator<Contacts> listIterator = array.listIterator();
-						/*
-						 * It is a java iterator which is used to traverse all types of lists including
-						 * ArrayList, Vector, LinkedList, Stack
-						 */
-
+						
 						while (listIterator.hasNext()) {
 							contact = listIterator.next();
-							/*
-							 * Entering the condition if firstname matches
-							 */
+							
 							if (contact.getFirstName().equals(firstName1)) {
 
 								System.out.print("Enter new first Name: ");
@@ -131,3 +124,4 @@ public class AddressBook {
 		}
 	}
 }
+	}
