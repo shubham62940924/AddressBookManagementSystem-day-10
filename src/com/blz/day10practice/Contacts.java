@@ -6,7 +6,7 @@ public class Contacts {
 	private String address;
 	private String city;
 	private String state;
-	private String zip;
+	private int zip;
 	private String phoneNumber;
 	private String email;
 
@@ -20,7 +20,8 @@ public class Contacts {
 	 * @param phoneNumber
 	 * @param email
 	 */
-	public Contacts(String firstName, String lastName, String address, String city, String state, String zip,
+
+	public Contacts(String firstName, String lastName, String address, String city, String state, int zip,
 			String phoneNumber, String email) {
 		super();
 		this.firstName = firstName;
@@ -106,14 +107,14 @@ public class Contacts {
 	/**
 	 * @return the zip
 	 */
-	public String getZip() {
+	public int getZip() {
 		return zip;
 	}
 
 	/**
 	 * @param zip the zip to set
 	 */
-	public void setZip(String zip) {
+	public void setZip(int zip) {
 		this.zip = zip;
 	}
 
